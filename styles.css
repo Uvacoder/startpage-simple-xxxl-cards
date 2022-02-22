@@ -82,13 +82,18 @@ main {
   }
 }
 
+.card {
+  height: 15rem;
+  width: 15rem;
+}
+
 .card:link,
 .card:visited {
   color: white;
   text-decoration: none;
 
   margin: 1.2rem;
-  padding: 4rem 8rem;
+  padding: 8rem 8rem;
 
   background-color: var(--background-light);
   border-radius: 15px;
@@ -126,7 +131,10 @@ main {
 .card__icon {
   font-size: 10rem;
 
+  position: absolute;
+
   padding: 1rem;
+  margin: 1rem;
 
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
@@ -134,8 +142,8 @@ main {
   display: grid;
   place-items: center;
 
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .card__name {

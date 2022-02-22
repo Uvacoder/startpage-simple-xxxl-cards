@@ -18,6 +18,12 @@ const CARDS = [
     link: "https://www.youtube.com/",
   },
   {
+    name: "HBO Max",
+    icon: "",
+    link: "https://www.hbomax.com/",
+    svg: "/assets/hbo-max.svg"
+  },
+  {
     name: "Disney+",
     icon: "",
     link: "https://www.disneyplus.com/",
@@ -34,12 +40,6 @@ const CARDS = [
     icon: "",
     link: "https://app.plex.tv/desktop",
     svg: "/assets/plex.svg"
-  },
-  {
-    name: "HBO Max",
-    icon: "",
-    link: "https://www.hbomax.com/",
-    svg: "/assets/hbo-max.svg"
   },
 ];
 
