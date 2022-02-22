@@ -4,48 +4,13 @@
 
 /* -------------------------------------------------------- */
 
-const NAME = "Reyes";
+const NAME = "aj";
 
 const CARDS = [
   {
-    name: "Apple Music",
-    icon: "ri-music-2-fill",
-    link: "https://music.apple.com/us/browse",
-  },
-  {
-    name: "Reddit",
-    icon: "ri-reddit-fill",
-    link: "https://www.reddit.com/",
-  },
-  {
-    name: "Figma",
-    icon: "ri-palette-fill",
-    link: "https://www.figma.com/",
-  },
-  {
-    name: "Github",
-    icon: "ri-github-fill",
-    link: "https://github.com/",
-  },
-  {
-    name: "Twitter",
-    icon: "ri-twitter-fill",
-    link: "https://twitter.com",
-  },
-  {
-    name: "Dribbble",
-    icon: "ri-dribbble-fill",
-    link: "https://dribbble.com/",
-  },
-  {
-    name: "Hashnode",
-    icon: "ri-hashtag",
-    link: "https://hashnode.com/",
-  },
-  {
-    name: "CodeSandbox",
-    icon: "ri-cloud-fill",
-    link: "https://codesandbox.io/dashboard/",
+    name: "Netflix",
+    icon: "ri-netflix-fill",
+    link: "https://www.netflix.com",
   },
   {
     name: "YouTube",
@@ -53,14 +18,28 @@ const CARDS = [
     link: "https://www.youtube.com/",
   },
   {
-    name: "LinkedIn",
-    icon: "ri-linkedin-fill",
-    link: "https://www.linkedin.com/",
+    name: "Disney+",
+    icon: "",
+    link: "https://www.disneyplus.com/",
+    svg: "/assets/disney-plus.svg"
   },
   {
-    name: "Gmail",
-    icon: "ri-google-fill",
-    link: "https://mail.google.com/",
+    name: "Hulu",
+    icon: "",
+    link: "https://www.hulu.com/",
+    svg: "/assets/hulu.svg"
+  },
+  {
+    name: "Plex",
+    icon: "",
+    link: "https://app.plex.tv/desktop",
+    svg: "/assets/plex.svg"
+  },
+  {
+    name: "HBO Max",
+    icon: "",
+    link: "https://www.hbomax.com/",
+    svg: "/assets/hbo-max.svg"
   },
 ];
 
@@ -71,28 +50,28 @@ const CARDS = [
 /******************/
 
 const DAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
+  "sunday",
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
 ];
 
 const MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "january",
+  "february",
+  "march",
+  "april",
+  "may",
+  "june",
+  "july",
+  "august",
+  "september",
+  "october",
+  "november",
+  "december",
 ];
 
 const updateDate = () => {
@@ -112,10 +91,10 @@ const updateDate = () => {
   // Update the Time
   currentTime.innerHTML = `${
     currentHour % 12 == 0 ? "12" : currentHour % 12
-  }:${currentMinute} ${currentHour > 11 ? "PM" : "AM"}`;
+  }:${currentMinute} ${currentHour > 11 ? "pm" : "am"}`;
 
   // Update the Date
-  currentDate.innerHTML = `${DAYS[currentDay]} ${currentNumber}, ${MONTHS[currentMonth]} ${currentYear}`;
+  currentDate.innerHTML = `${DAYS[currentDay]} ${MONTHS[currentMonth]} ${currentNumber},  ${currentYear}`;
 
   // Create a Loop
   setTimeout(() => {
@@ -136,8 +115,19 @@ const printCards = () => {
     let currentCard = document.createElement("a");
     let currentCardText = document.createElement("p");
     currentCardText.appendChild(document.createTextNode(card.name));
-    let currentCardIcon = document.createElement("i");
-    currentCardIcon.classList.add(card.icon);
+    let currentCardIcon;
+
+    if (card.icon === "") {
+      currentCardIcon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      var useElem = document.createElementNS("http://www.w3.org/2000/svg", "use");
+      useElem.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", card.svg + "#Layer_1");
+
+      currentCardIcon.appendChild(useElem);     
+    } else {
+      currentCardIcon = document.createElement("i");
+      currentCardIcon.classList.add(card.icon);
+    }
+
 
     // Style the Card Element
     currentCard.classList.add("card");

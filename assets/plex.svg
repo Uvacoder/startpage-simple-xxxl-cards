@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   viewBox="0 0 1024 331.9881"
+   version="1.1"
+   sodipodi:docname="plex.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs169" />
+  <sodipodi:namedview
+     id="namedview167"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.0332031"
+     inkscape:cx="511.51607"
+     inkscape:cy="166.47259"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <g
+     transform="matrix(0.26023606,0,0,0.26023606,110.45705,35.810964)"
+     id="g164">
+    <path
+       fill="currentColor"
+       d="m 3085.99,0 h -290 l -290,500 290,500 h 289.747 L 2795.99,500.25 Z"
+       id="path154" />
+    <path
+       fill="currentColor"
+       d="m 2186,0 h 290 l 320,500.25 -320,500.25 h -290 l 320,-500.25 z"
+       id="path156" />
+    <path
+       fill="currentColor"
+       d="M 2085.947,1000 H 1508.874 V 0 h 577.073 V 173.737 H 1721.34 V 393.3 h 339.254 V 567.03 H 1721.34 v 257.865 h 364.607 z m -1294.671,0 V 0 h 212.04 v 824.895 h 405.61 V 1000 Z"
+       id="path158" />
+    <path
+       fill="currentColor"
+       d="m 589.947,558.824 c -67.268,57.007 -162.91,85.5 -286.938,85.5 h -90.97 V 1000 H 0 V 470.338 l 290,0.36 c 177.563,-2.07 186.842,-110.82 186.842,-148.498 0,-34.98 0,-146.755 -157.842,-148.5 L 0,173.703 V 0 H 319.424 C 440.717,0 532.94,26.107 596.1,78.32 c 63.153,52.214 94.734,130.072 94.734,233.582 0,107.625 -33.632,189.928 -100.887,246.922 z"
+       id="path160" />
+    <path
+       fill="currentColor"
+       d="M 0,110 H 212.2 V 539 H 0 Z"
+       id="path162" />
+  </g>
+</svg>

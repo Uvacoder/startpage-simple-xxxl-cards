@@ -1,7 +1,7 @@
 /* Custom Variables | Color Scheme */
 
 :root {
-  --primary: #FFC759;
+  --primary: #769aee;
   --text-light: #eeeeee;
   --background: #191E29;
   --background-light: #202633;
@@ -64,6 +64,10 @@ main {
     display: none;
   }
 
+  form {
+    display: none;
+  }
+
   .header {
     flex-direction: column-reverse;
   }
@@ -106,6 +110,7 @@ main {
 .card:focus {
   border-color: var(--primary);
   color: var(--primary);
+  fill: var(--primary);
 
   transform: scale(1.02);
 }
@@ -119,7 +124,7 @@ main {
 }
 
 .card__icon {
-  font-size: 2rem;
+  font-size: 10rem;
 
   padding: 1rem;
 
@@ -128,6 +133,9 @@ main {
 
   display: grid;
   place-items: center;
+
+  width: 15rem;
+  height: 15rem;
 }
 
 .card__name {
@@ -140,4 +148,29 @@ main {
   left: 50%;
 
   transition: 0.1s;
+}
+
+#searchbar {
+  text-align: center;
+  transition: 0.1s;
+}
+
+#searchbar_input, select, textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-light);
+  font-size: 2rem;
+
+  background-color: var(--background-light);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, .05);
+
+  padding: .5rem;
+  transition: 0.1s;
+  font-family: 'Inter', sans-serif;
+}
+
+#searchbar_input:focus,
+#searchbar_input:hover {
+  border-color: var(--primary);
+  outline: none;
 }
