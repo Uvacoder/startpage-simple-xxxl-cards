@@ -6,10 +6,10 @@ This fork of Root provides support for SVG icons. I am by no means a web develop
 To use an SVG as an icon, append a new object to the `CARDS` constant, with the icons field left as the empty string. It should look something like this:
 ```js
 {
-  name: "<webpage name>",
+  name: "Example Site",
   icon: "",
-  link: "<webpage link>",
-  svg: "svg_path.svg"
+  link: "http://example.com/",
+  svg: "/path/to/your.svg"
 },
 ```
 The SVG also requires a little bit of preparation.
