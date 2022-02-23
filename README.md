@@ -1,63 +1,19 @@
-![](./assets/header.png)
-
 ### Root is a start-page aimed to simplicity and elegance
+Learn more about Root in imreyesjorge's [repository](https://github.com/imreyesjorge/root-startpage/). This project uses [Remix Icons](https://remixicon.com/).
 
-This project is blazing fast :zap:, it only contains an html, css and javascript files.
-
-## Customizing
-
-Root was created to be lightweight, fast and easy to customize.
-
-### Changin Colors
-
-To change the colors used in the startpage edit `styles.css`.
-
-```css
-:root {
-  --primary: #dd2e44;
-  --text-light: #eeeeee;
-  --background: #1e1c21;
-  --background-light: #333138;
-}
-```
-
-### Changin Name and Adding Custom Cards
-
-> This project uses [Remix Icons](https://remixicon.com/).
-
-To change the default name and edit the cards, edit `app.js`. It should look something like this:
-
-```js
-const NAME = "John Doe";
-
-const CARDS = [
-  {
-    name: "Twitter",
-    icon: "ri-twitter-fill",
-    link: "https://twitter.com",
-  },
-  {
-    name: "Github",
-    icon: "ri-github-fill",
-    link: "https://github.com/",
-  },
-];
-```
-
-To add a new card, just append a new object to the `CARDS` constant. The object should look something like this:
-
+### SVG Support
+This fork of Root provides support for SVG icons. I am by no means a web developer, so they probably aren't implemented in the best way.
+To use an SVG as an icon, append a new object to the `CARDS` constant, with the icons field left as the empty string. It should look something like this:
 ```js
 {
-  name: "<Webpage Name>",
-  icon: "<Icon Class-Name>",
-  link: "<Webpage Link>"
+  name: "<webpage name>",
+  icon: "",
+  link: "<webpage link>",
+  svg: "svg_path.svg"
 },
 ```
-
-> To get the icon class-name, just go to [Remix Icons](https://remixicon.com/), select the desired icon. You should see something like this: `<i class="this-is-the-class-name"></i>`.
-
-To use 24 hour time simply change the time section of `app.js` to
-```
-// Update the Time
-  currentTime.innerHTML = `${currentHour}:${currentMinute}`;
-```
+The SVG also requires a little bit of preparation.
+1. Open the .SVG in a text editor of your choice.
+2. Within the `<svg>` tag, change (or add) the `id` as follows: `id="Layer_1"`.
+3. For each `<path>` tag, change (or add) the `fill` as follows: `fill="currentColor"`.
+4. *(Optional) If the SVG appears too large, scale it down using vector graphics software like [Inkscape](https://inkscape.org/).* 
