@@ -10,7 +10,7 @@ const CARDS = [
   {
     name: "Netflix",
     icon: "ri-netflix-fill",
-    link: "https://www.netflix.com",
+    link: "https://www.netflix.com/browse",
   },
   {
     name: "YouTube",
@@ -20,19 +20,19 @@ const CARDS = [
   {
     name: "HBO Max",
     icon: "",
-    link: "https://www.hbomax.com/",
+    link: "https://play.hbomax.com/page/urn:hbo:page:home",
     svg: "/assets/hbo-max.svg"
   },
   {
     name: "Disney+",
     icon: "",
-    link: "https://www.disneyplus.com/",
+    link: "https://www.dishttps://www.disneyplus.com/homeneyplus.com/",
     svg: "/assets/disney-plus.svg"
   },
   {
     name: "Hulu",
     icon: "",
-    link: "https://www.hulu.com/",
+    link: "https://www.hulu.com/hub/home",
     svg: "/assets/hulu.svg"
   },
   {
