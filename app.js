@@ -26,7 +26,7 @@ const CARDS = [
   {
     name: "Disney+",
     icon: "",
-    link: "https://www.dishttps://www.disneyplus.com/homeneyplus.com/",
+    link: "https://www.disneyplus.com/home",
     svg: "/assets/disney-plus.svg"
   },
   {
